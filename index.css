@@ -24,6 +24,12 @@ body {
   transform: translateX(-50%);
 }
 
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
 .nav {
   display: flex;
   gap: 20px;
@@ -56,6 +62,11 @@ body {
 
 .tab {
   position: relative;
+  color: gray;
+}
+
+.selected {
+  color: black;
 }
 
 .selected::before {
