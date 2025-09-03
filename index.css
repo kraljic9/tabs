@@ -43,14 +43,15 @@ a {
   gap: 10px;
 }
 
-.instruction {
+.title {
   grid-row: 1 / 2;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .content {
-  background-color: black;
-  color: white;
+  background-image: url(images/new_super_mario_bros_u.avif);
+  background-size: contain;
+  background-repeat: no-repeat;
   grid-row: 2 / 4;
   border-radius: 10px;
 }
@@ -77,4 +78,14 @@ a {
   width: 100%;
   height: 2px;
   background-color: black;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }

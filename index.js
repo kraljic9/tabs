@@ -5,6 +5,8 @@ let tabFour = document.getElementById("tab-4");
 let tabs = document.getElementsByClassName("tab");
 let selectedTab = document.getElementsByClassName("selected");
 let description = document.querySelector(".description");
+let title = document.querySelector(".title");
+let content = document.querySelector(".content");
 
 tabOne.addEventListener("click", function (e) {
   e.preventDefault(e);
@@ -13,6 +15,8 @@ tabOne.addEventListener("click", function (e) {
   }
   tabs[0].classList.add("selected");
   description.innerHTML = "This is the first tab";
+  title.innerHTML = "Super Mario Bros U";
+  content.style.backgroundImage = `url(images/new_super_mario_bros_u.avif)`;
 });
 
 tabTwo.addEventListener("click", function (e) {
@@ -22,6 +26,8 @@ tabTwo.addEventListener("click", function (e) {
   }
   tabs[1].classList.add("selected");
   description.innerHTML = "This is the second tab";
+  title.innerHTML = "Call of Duty Blackops 6";
+  content.style.backgroundImage = "url(images/blackops.avif)";
 });
 
 tabThree.addEventListener("click", function (e) {
@@ -31,6 +37,8 @@ tabThree.addEventListener("click", function (e) {
   }
   tabs[2].classList.add("selected");
   description.innerHTML = "This is the third tab";
+  title.innerHTML = "Mienecraft";
+  content.style.backgroundImage = "url(images/minecraft.webp)";
 });
 
 tabFour.addEventListener("click", function (e) {
@@ -40,4 +48,6 @@ tabFour.addEventListener("click", function (e) {
   }
   tabs[3].classList.add("selected");
   description.innerHTML = "This is the fourth tab";
+  title.innerHTML = "God Of War";
+  content.style.backgroundImage = "url(images/god-of-war.jpg)";
 });
