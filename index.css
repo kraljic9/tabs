@@ -4,6 +4,52 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .tab {
   list-style: none;
+}
+
+.container {
+  padding: 20px;
+  width: 50%;
+  border: 3px solid;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+  height: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.instruction {
+  grid-row: 1 / 2;
+  margin-top: 10px;
+}
+
+.content {
+  background-color: black;
+  color: white;
+  grid-row: 2 / 4;
+  border-radius: 10px;
+}
+
+.description {
+  grid-row: 4 / 5;
+  margin-top: 10px;
 }
